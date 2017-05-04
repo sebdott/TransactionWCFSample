@@ -99,7 +99,7 @@
   <wsp:Policy wsu:Id="WSHttpBinding_IService1_PerformDebitTransaction_policy">
     <wsp:ExactlyOne>
       <wsp:All>
-        <wsat:ATAssertion xmlns:wsat="http://schemas.xmlsoap.org/ws/2004/10/wsat" />
+        <wsat:ATAssertion wsp:Optional="true" wsp1:Optional="true" xmlns:wsat="http://schemas.xmlsoap.org/ws/2004/10/wsat" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2002/12/policy" />
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>

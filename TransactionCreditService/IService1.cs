@@ -12,7 +12,7 @@ namespace TransactionCreditService
     [ServiceContract]
     public interface IService1
     {
-        [OperationContract, TransactionFlow(TransactionFlowOption.Mandatory)]
+        [OperationContract, TransactionFlow(TransactionFlowOption.Allowed)]
         bool PerformCreditTransaction(string creditAccountID, double amount);
 
         //[OperationContract, TransactionFlow(TransactionFlowOption.Mandatory)]

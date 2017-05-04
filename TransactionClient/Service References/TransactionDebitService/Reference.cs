@@ -16,7 +16,7 @@ namespace TransactionClient.TransactionDebitService {
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PerformDebitTransaction", ReplyAction="http://tempuri.org/IService1/PerformDebitTransactionResponse")]
-        [System.ServiceModel.TransactionFlowAttribute(System.ServiceModel.TransactionFlowOption.Mandatory)]
+        [System.ServiceModel.TransactionFlowAttribute(System.ServiceModel.TransactionFlowOption.Allowed)]
         bool PerformDebitTransaction(string debitAccountID, double amount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PerformDebitTransaction", ReplyAction="http://tempuri.org/IService1/PerformDebitTransactionResponse")]

@@ -16,7 +16,7 @@ namespace TransactionClient.TransactionCreditService {
     public interface IService1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PerformCreditTransaction", ReplyAction="http://tempuri.org/IService1/PerformCreditTransactionResponse")]
-        [System.ServiceModel.TransactionFlowAttribute(System.ServiceModel.TransactionFlowOption.Mandatory)]
+        [System.ServiceModel.TransactionFlowAttribute(System.ServiceModel.TransactionFlowOption.Allowed)]
         bool PerformCreditTransaction(string creditAccountID, double amount);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/PerformCreditTransaction", ReplyAction="http://tempuri.org/IService1/PerformCreditTransactionResponse")]

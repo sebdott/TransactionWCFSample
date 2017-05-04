@@ -15,7 +15,7 @@ namespace TransactionDebitService
         //[OperationContract, TransactionFlow(TransactionFlowOption.Mandatory)]
         //bool PerformCreditTransaction(string creditAccountID, double amount);
 
-        [OperationContract, TransactionFlow(TransactionFlowOption.Mandatory)]
+        [OperationContract, TransactionFlow(TransactionFlowOption.Allowed)]
         bool PerformDebitTransaction(string debitAccountID, double amount);
 
     }
